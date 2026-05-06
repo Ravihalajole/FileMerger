@@ -1,75 +1,59 @@
-# File Merger for Android
-> **A high-performance, One UI-inspired utility for source code consolidation.**
+# File Merger
+> **A simple, smooth tool to turn messy project folders into single, clean documents.**
 
-[![Java 17](https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=java&logoColor=white)](https://www.oracle.com/java/)
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com/)
-[![License](https://img.shields.io/badge/License-MIT-3E91FF?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build](https://img.shields.io/badge/Build-v1.0.0--stable-brightgreen?style=flat-square)](#)
-
----
-
-## 📌 Overview
-**File Merger** is a specialized Android tool built for developers who need to consolidate complex project structures into single, readable documents. Designed with the **Samsung One UI** design language, it offers a native-feeling experience while providing heavy-duty file processing capabilities.
-
-### Why File Merger?
-In a mobile-first development environment (like AndroidIDE), reviewing large codebases is difficult. File Merger flattens your project into a single `.txt` or `.md` file, perfect for code audits, LLM context windows, or offline reading.
-
-
+[![Java 17](https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=java&logoColor=white)](#)
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
+[![Vibe](https://img.shields.io/badge/Vibe-Coded-blueviolet?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-3E91FF?style=flat-square)](#)
 
 ---
 
-## ✨ Core Competencies
+## 📌 What is this?
+**File Merger** is a straightforward Android app that takes a folder full of files (like your code project) and merges them all into one big text file. 
 
-* **Recursive Deep-Scan:** Efficiently traverses nested directory trees without memory overhead.
-* **Scoped Storage Implementation:** Full compliance with Android 11+ storage policies using `DocumentFile` and `OpenDocumentTree`.
-* **Threaded Processing:** Utilizes `ExecutorService` for non-blocking I/O, ensuring the UI remains responsive during large merge tasks.
-* **Native One UI Aesthetic:** Implements reachability patterns, pure OLED black backgrounds, and Samsung-standard typography.
+Whether you need to share your whole project with an AI, do a quick code review, or just keep a backup, this app does it with a "One UI" look that feels native to your Samsung or Android device.
 
 ---
 
-## 🛠 Technical Stack
+## ✨ The Vibe
+* **Immersive Dark Mode:** No grey or navy—just pure, deep black. 
+* **Easy to Reach:** You don't have to stretch your thumb to the top of the screen; everything important is at the bottom.
+* **Clean Output:** Every file in the merged document gets a clear "Header" so you know exactly where that code came from.
 
-| Category | Technology |
-| :--- | :--- |
-| **Language** | Java 17 (LTS) |
-| **UI Engine** | Material 3 / One UI Components |
-| **Min SDK** | API 21 (Android 5.0) |
-| **Architecture** | Imperative with Background Concurrency |
-| **Build System** | Gradle 8.0+ |
+
 
 ---
 
-## 📸 Interface Preview
+## 🛠 Tech Stack (The Simple Version)
+* **Java 17:** Built with the latest, stable version of Java.
+* **Modern Android:** Uses the newest Material 3 components for that fresh look.
+* **Background Processing:** It works in the background so your phone doesn't freeze while merging big folders.
+
+---
+
+## 📸 See it in Action
 
 <p align="center">
-  <img src="docs/main.png" width="32%" alt="Main UI" />
-  <img src="docs/main1.png" width="32%" alt="With Input" />
+  <img src="docs/main.png" width="30%" alt="Main App Screen" />
+  <img src="docs/main1.png" width="30%" alt="Picking a Folder" />
 </p>
 
 ---
 
-## 🚀 Quick Start
-
-### Build Requirements
-Ensure you have the latest **AndroidIDE** or **Android Studio** installed with the following:
-* JDK 17
-* Android SDK 34 (Upside Down Cake)
-
-### Installation
-1.  **Clone the Repository**
-    ```bash
-    git clone [https://github.com/org-ravi/file-merger-android.git](https://github.com/org-ravi/file-merger-android.git)
-    ```
-2.  **Synchronize Gradle**
-    The project uses Version Catalogs (`libs.versions.toml`) for modern dependency management.
-3.  **Execute Build**
-    ```bash
-    ./gradlew assembleDebug
-    ```
+## 🚀 How to Build it
+1.  **Clone it:** `git clone https://github.com/RaviHalajole/filemerger.git`
+2.  **Open it:** Use **AndroidIDE** or **Android Studio**.
+3.  **Run it:** Just hit the Play button. It's already configured and ready to go.
 
 ---
 
-## 📖 Developer Documentation
-Detailed logic regarding URI persistence and `FileProcessor` implementation can be found in the Javadoc:
-```bash
-./gradlew javadoc
+## 📖 Technical Bits
+If you are a developer and want to see how the file logic works, check out the `FileProcessor.java` file. It uses a recursive method to make sure it finds every file hidden in your sub-folders.
+
+---
+
+## ⚖️ License
+This project is under the **MIT License**. Use it, change it, or share it—just have fun with it.
+
+---
+**Crafted by Ravi** • [Check out my other projcts](https://github.com/RaviHalajole)
