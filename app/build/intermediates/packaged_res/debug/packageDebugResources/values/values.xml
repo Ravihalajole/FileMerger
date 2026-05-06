@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="ic_launcher_background">#3c6ee6</color>
+    <color name="oneui_accent">#3E91FF</color>
+    <color name="oneui_bg">#000000</color>
+    <color name="oneui_card_inner">#2C2C2E</color>
+    <color name="oneui_divider">#3A3A3C</color>
+    <color name="oneui_surface">#1C1C1E</color>
+    <color name="oneui_text_primary">#FFFFFF</color>
+    <color name="oneui_text_secondary">#8E8E93</color>
+    <string name="app_name">FileMerger</string>
+    <style name="AppTheme" parent="Base.AppTheme"/>
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/oneui_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/oneui_bg</item>
+        <item name="android:navigationBarColor">@color/oneui_bg</item>
+        
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="27">false</item>
+
+        <item name="colorPrimary">@color/oneui_accent</item>
+        <item name="colorOnPrimary">@color/oneui_text_primary</item>
+        <item name="colorContainer">@color/oneui_surface</item>
+        <item name="colorOnContainer">@color/oneui_text_primary</item>
+    </style>
+</resources>

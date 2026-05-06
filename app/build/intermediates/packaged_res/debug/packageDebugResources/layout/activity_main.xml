@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oneui_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="File Merger"
+            android:textColor="@color/oneui_text_primary"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-light" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70"
+        android:background="@drawable/one_ui_container_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/one_ui_card_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="12dp"
+                    android:background="@drawable/one_ui_top_item_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FILE EXTENSIONS"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/oneui_accent"
+                        android:layout_marginStart="20dp"
+                        android:letterSpacing="0.05" />
+
+                    <EditText
+                        android:id="@+id/extInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:hint="e.g. java, txt, smali"
+                        android:textColorHint="@color/oneui_text_secondary"
+                        android:textColor="@color/oneui_text_primary"
+                        android:paddingHorizontal="20dp"
+                        android:textSize="16sp"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" 
+                    android:background="@color/oneui_divider" android:layout_marginHorizontal="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingVertical="16dp">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source Folder"
+                        android:textColor="@color/oneui_text_primary"
+                        android:textSize="16sp"
+                        android:paddingHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvSourcePath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="No folder selected"
+                        android:textSize="13sp"
+                        android:textColor="@color/oneui_text_secondary"
+                        android:layout_marginTop="2dp" />
+
+                    <Button android:id="@+id/btnSelectFolder" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" 
+                    android:background="@color/oneui_divider" android:layout_marginHorizontal="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutOutput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save Location"
+                        android:textColor="@color/oneui_text_primary"
+                        android:textSize="16sp"
+                        android:paddingHorizontal="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvOutputPath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="No file selected"
+                        android:textSize="13sp"
+                        android:textColor="@color/oneui_text_secondary"
+                        android:layout_marginTop="2dp" />
+
+                    <Button android:id="@+id/btnSelectOutput" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Ready to merge"
+                android:textColor="@color/oneui_text_secondary" />
+
+            <View android:layout_width="match_parent" android:layout_height="32dp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/oneui_accent"
+                app:cornerRadius="28dp"
+                android:text="Start Merger"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:progressTint="@color/oneui_accent"
+                android:progressBackgroundTint="@color/oneui_divider"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

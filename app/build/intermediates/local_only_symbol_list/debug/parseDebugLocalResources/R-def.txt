@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+color oneui_accent
+color oneui_bg
+color oneui_card_inner
+color oneui_divider
+color oneui_surface
+color oneui_text_primary
+color oneui_text_secondary
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable one_ui_button_bg
+drawable one_ui_card_bg
+drawable one_ui_container_bg
+drawable one_ui_top_item_bg
+id btnSelectFolder
+id btnSelectOutput
+id btnStart
+id extInput
+id layoutOutput
+id layoutSource
+id progressBar
+id tvOutputPath
+id tvSourcePath
+id tvStatus
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style AppTheme
+style Base.AppTheme
+xml backup_rules
+xml data_extraction_rules
