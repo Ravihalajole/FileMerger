@@ -43,7 +43,7 @@ In a mobile-first development environment (like AndroidIDE), reviewing large cod
 
 <p align="center">
   <img src="docs/main.png" width="32%" alt="Main UI" />
-  <img src="docs/main1.png" width="32%" alt="Input" />
+  <img src="docs/main1.png" width="32%" alt="With Input" />
 </p>
 
 ---
